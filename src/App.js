@@ -9,7 +9,7 @@ function App(){
   }
   const getMovie=(e)=>{
     e.preventDefault();
-    axios.get(`http://www.omdbapi.com/?s=${text}&apikey=1a5a45c8`)
+    axios.get(`https://www.omdbapi.com/?s=${text}&apikey=1a5a45c8`)
     .then((response)=>{
       console.log(response);
       setMovie(response.data.Search)
