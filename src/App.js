@@ -1,8 +1,9 @@
 import { useState } from "react";
 import axios from 'axios';
+import logo from './images/movieposter3.png';
 function App(){
 
-  const [text,setText]=useState("search Movie")
+  const [text,setText]=useState("")
   const [movie,setMovie]=useState([])
   const changeText=(event)=>{
       setText(event.target.value)
@@ -13,7 +14,11 @@ function App(){
     .then((response)=>{
       console.log(response);
       setMovie(response.data.Search)
+     
     })
+    
+    
+    
   }
   return (
     <>
@@ -58,8 +63,13 @@ function App(){
               )
             })
           }
+          <img src={logo} alt="" style={{width:"100%", height:"100%"}}/>
     </div>
+     
+    
+      
 </div>
+     
     </>
   )
 }
