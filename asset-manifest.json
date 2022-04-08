@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/movielistapp/static/js/main.34a841e1.js",
+    "main.js": "/movielistapp/static/js/main.c979ae3a.js",
+    "static/media/movieposter3.png": "/movielistapp/static/media/movieposter3.95807b88265c3245cb42.png",
     "index.html": "/movielistapp/index.html",
-    "main.34a841e1.js.map": "/movielistapp/static/js/main.34a841e1.js.map"
+    "main.c979ae3a.js.map": "/movielistapp/static/js/main.c979ae3a.js.map"
   },
   "entrypoints": [
-    "static/js/main.34a841e1.js"
+    "static/js/main.c979ae3a.js"
   ]
 }
