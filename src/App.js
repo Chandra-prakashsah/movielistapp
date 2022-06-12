@@ -1,12 +1,7 @@
 import { useState } from "react";
 import axios from 'axios';
-//  import DefaultMovies from "./DefaultMovies";
- import logo from './images/movieposter3.png'
-
-
+import logo from './images/movieposter3.png'
 function App(){
- 
-
   const [text,setText]=useState("")
   const [movie,setMovie]=useState([])
   const [afterSearch,setClass]=useState("")
@@ -24,7 +19,7 @@ function App(){
     }).catch(err => {
       alert("Movie Name Not Found");
       window.location.reload(false);
-    })  
+    }) 
   }
   return (
     <>
@@ -51,18 +46,20 @@ function App(){
     </div>
   </div>
 </nav>
-{/* <DefaultMovies name={afterSearch} /> */}
+
 <div className="container">
     <div className="row">
           {
             movie.map((value,index)=>{
               return(
-                <div className="col-3">
-                 <div className="card" style={{width: "18rem"}}>
+                <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div className="card" style={{width: "100%",height:"auto"}}>
                     <img src={value.Poster} className="card-img-top" alt="..."/>
                       <div className="card-body">
                         <h5 className="card-title">{value.Year}</h5>
                         <h4 className="card-text">{value.Title} </h4>
+                        <h4 className="card-text">{value.Rated} </h4>
+                       
                         
                       </div>
                  </div>

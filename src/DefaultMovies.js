@@ -23,8 +23,8 @@ const DefaultMovies = (props) => {
            {
             data.map((value,index)=>{
               return(
-                <div className="col-3">
-                 <div className="card" style={{width: "18rem"}}>
+                <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                  <div className="card" style={{width: "100%",height:"auto"}}>
                     <img src={value.Poster} className="card-img-top" alt="..."/>
                       <div className="card-body">
                         <h5 className="card-title">{value.Year}</h5>
